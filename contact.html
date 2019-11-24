@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Code-Food;</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-bar-menu">
+                <li class="nav-list-item"><a href="index.html">Startsida</a></li>
+                <li class="nav-list-item"><a href="products.html">Produkter</a></li>
+                <li class="nav-list-item"><a href="about.html">Om oss</a></li>
+                <li class="nav-list-item active"><a href="contact.html">Kontakt</a></li>
+            </ul>
+           
+        </nav>
+        <nav class="mobile-nav-bar">   
+            <a href="index.html">Startsida</a>
+            <input type="checkbox" id="hamburger-btn"/>
+            <label class="btn" for="hamburger-btn">
+                <span class="fa fa-bars"></span>
+            </label>
+            <div id="mobile-links">
+                <a href="products.html">Produkter</a>
+                <a href="about.html">Om oss</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+<main>
+
+    <!--Container= Styr hela den "rörliga delen" på sidan-->
+    <div class="container">
+        <!--Rubriken-->
+        <h2>Om du har frågor eller synpunkter...</h2>
+        <h1>Kontakta oss på <span class="company-name-color">Code-Food</span><span class="semikolon-color">;</span></h1>
+      
+           <!-- Wrapper= Hela formuläret-->     
+        <div class="wrapper">
+                        
+            <div class="company-info">
+                            
+                <h2><span class="company-name-color">Code-Food</span><span class="semikolon-color">;</span></h2>
+                <ul>
+                    <li><i class="material-icons">home</i>Geekgatan 42</li>
+                    <li><i class="material-icons">home</i>417 13 Göteborg</li>
+                    <li><i class="material-icons">local_phone</i>Tel: 070-3141592</li>
+                    <li><i class="material-icons">email</i>codefood@yummy.com</li>
+                </ul>
+                       
+            </div>
+            
+            <!-- Form-box= Delen med textrutorna-->     
+            <div class="form-box">
+                
+                <form>
+                <p>
+                    <label class="form-label">Namn</label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label class="form-label">Adress</label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label class="form-label">Email</label>
+                    <input type="text">
+                </p>
+                    <p>
+                    <label class="form-label">Telefon</label>
+                    <input type="text">
+                </p>
+                <p class="full">
+                    <label class="form-label">Meddelande</label>
+                    <textarea rows="5"></textarea>
+                </p>
+                <p class="modal-open-container">  
+                      <a href="#modal" class="modal-open">Skicka</a>
+                </p>
+                </form>
+            </div>
+            
+        </div>
+        
+        <!-- Modal-popupruta-->    
+        
+        <div class="modal" id="modal">
+            <div class="modal-container" id="modal-container">
+                <a href="#" class="modal-close-x">&times;</a>
+                
+                <h1>Tack för ditt meddelande!</h1>
+                <div class="modal-streck"></div>
+                <p>Vi lovar att återkomma med svar så snabbt vi kan. Tills dess, live long and prosper och koda lugnt<strong class="semikolon-color">;</strong></p>
+                
+              <p class="modal-close-button"><a href="#" class="close-button">Stäng</a></p>  
+                    
+            </div>
+        </div>
+         
+            <!-- Complain-box= Den andra delen med text och bild på muppetchef-->     
+        <div class="complain-box">
+            <div class="complain-text">
+                <h2>Har du några specifika funderingar kring näringsinnehåll och kodnings-diet?</h2>
+                <p>Välkommen att kontakta vår näringskonsult Chef Muppetsson. Han har många års erfarenhet i kodnings-mat-branschen och svarar gärna på alla era frågor.
+                </p>
+                
+                <p>codefoodchef@yummy.com</p>
+            </div>
+            <div class="complain-img">
+                <img src="../img/The_Swedish_Chef.jpg" alt="muppet chef">
+            </div>
+        </div> 
+    </div>
+   
+</main>   
+<footer>
+    <div class="social-media">
+        <a href="#"><i class="fa fa-facebook-square"></i></a>
+        <a href="#"><i class="fa fa-twitter-square"></i></a> 
+        <a href="#"><i class="fa fa-youtube-square"></i></a> 
+        <a href="#"><i class="fa fa-instagram"></i></a> 
+    </div>
+    <div class="footer-text">
+        <p>© 2019 Code-Food; Alla rättigheter är reserverade</p>
+    </div>
+</footer>
+</body>
+</html>

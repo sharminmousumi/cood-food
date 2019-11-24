@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+header{
+    width:100%;
+    position: fixed;
+    top:0;
+    border-bottom: 1px solid rgb(95, 95, 95);
+}
+main{
+    width:100%;
+    background-color: #1b1c20;
+    top:57px;
+    bottom:0px;
+    position: absolute;
+}
+#logo{
+    width:15%;
+    float:left;
+    height:56px;
+}
+#logo img{
+    height:56px;
+    float:right;
+    padding-right: 5px;
+}
+#hamburger-menu{
+    width:15%;
+    float:right;
+    height:56px;
+}
+.icon{
+    height:20px;
+    color:white;
+    position: absolute;
+    top:0;
+    display:block;
+    right:0;
+}
+.nav-bar{
+    background-color: #1b1c20;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-bar-menu{
+    display:flex;
+    align-items: center;
+    width:70%;
+    font-size: 1.2em;
+    list-style: none;
+    border-left: 1px solid rgb(95, 95, 95);
+    border-right: 1px solid rgb(95, 95, 95);
+}
+.nav-list-item{
+    flex:1;
+    flex-basis:10%;
+    text-align: center;
+    border-right: 1px solid rgb(95, 95, 95);
+}
+.nav-list-item:nth-child(4){
+    border-right: 0;
+}
+.nav-list-item a{
+    display:block;
+    color: white;
+    text-align: center;
+    padding:18px;
+    text-decoration: none;
+    transition: background-color 300ms, font-size  300ms;
+}
+.nav-list-item a:hover{
+    background-color: #f1f1f1;
+    color:black;    
+}
+.active a {
+    background-color: rgb(95, 95, 95);
+    color:white;
+}
+/*  sett width 100% width på nav-bar menu på alla bildskärmar mindre än desktop */
+@media only screen and (min-width:441px) and (max-width:768px){
+    .nav-bar-menu{
+        width:100%;
+    }
+    #logo{
+        display:none;
+    }
+
+}
+@media only screen and (min-width:320px) and (max-width:440px){
+    .nav-bar-menu{
+        width:100%;
+        font-size: 1.4em;
+    }
+    .nav-list-item a{
+        padding:17px;
+    }
+    #logo{
+        display:none;
+    }
+    /* Media rule for only Iphone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+    .nav-bar-menu{
+        font-size:1.2em;
+    }
+    .nav-list-item a{
+        padding: 15px;
+    }
+    main{
+        top:51px;
+    }
+}
+
+
+}
