@@ -1,14 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
+    <title>Code-Food;</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/about.css">
-    <title>Code-Food;</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap');
     </style>
@@ -24,9 +27,10 @@
                 <li class="nav-list-item"><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
-        <nav class="mobile-nav-bar">   
+
+        <nav class="mobile-nav-bar">
             <a href="index.html">Startsida</a>
-            <input type="checkbox" id="hamburger-btn"/>
+            <input type="checkbox" id="hamburger-btn" />
             <label class="btn" for="hamburger-btn">
                 <span class="fa fa-bars"></span>
             </label>
@@ -37,81 +41,107 @@
             </div>
         </nav>
     </header>
-    <main>
-            <div class="container">
-              <div class="image">
-            <p><h1>Om oss</h1>    
-                <img class="ig" src="../img/banner1.jpg" alt="online food service" width="300px" height="150px">
-                <p2><b>Code-Food;</b> är en online matservice där du kan beställa nästan alla typer av mat.
-                     Du kan få din mat på 20 minuter efter att du har gjort din beställning. 
-                     Vi serverar färska livsmedel. Vi har lagt till en ny grönsaksmeny som är mycket testy.
-                      Vår uppgift är att servera världens bästa mat till din dörr. Vi har en bra kock som gör maten mer utsökt.
-                      Vi serverar färska livsmedel. Vi har lagt till en ny grönsaksmeny som är mycket testy.
-                      Vår uppgift är att servera världens bästa mat till din dörr. Vi har en bra kock som gör maten mer utsökt.
-                </p2>
-            </p>
-            
-        </div> 
-        <div class="all_gallery">
-          <div class="gallery">
-            <a target="_blank" href="contact.html">
-              <img src="../img/karin.jpg" alt="Cinque Terre">
-            </a>
-            <div class="desc"> Managing partner and Ceo of the company</div>
-          </div>
-    
-          <div class="gallery">
-            <a target="_blank" href="about.html">
-              <img src="../img/sharmin.jpg" alt="Cinque Terre"width="600" height="400">
-            </a>
-            <div class="desc">Managing partner and customer officer</div>
-          </div>
-    
-          <div class="gallery">
-            <a target="_blank" href="index.html">
-              <img src="../img/jonas.jpg" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc"> Managing partner and webdeveloper</div>
-          </div>
-    
-          <div class="gallery">
-            <a target="_blank" href="Products.html">
-              <img src="../img/jahir.jpg" alt="Cinque Terre" width="600" height="100">
-            </a>
-            <div class="desc">  Managing partner and representive</div>
-          </div>
-        
+
+    <div class="container">
+        <div class="row container__text">
+            <div class="col-md-12">
+                <h2>Om oss</h2>
+                <div class="clearfix">
+                    <img src="../img/banner1.jpg" alt="..." class="pull-right img-responsive container__image">
+                    <p>
+                            <b>Code-Food;</b>  Vi är en online matservice där du kan beställa nästan alla typer av mat.
+                        Du kan få din mat på 20 minuter efter att du har gjort din beställning.Du kan få din mat på 20
+                        minuter efter att du har gjort din beställning.
+                        Du kan få din mat på 20 minuter efter att du har gjort din beställning.
+                        Vi serverar färska livsmedel.Vi har lagt till en ny grönsaksmeny som är mycket testy.
+                        Vår uppgift är att servera världens bästa mat till din dörr.Vi har en bra kock som gör maten mer
+                        utsökt.
+                        Vi serverar färska livsmedel.Vi har lagt till en ny grönsaksmeny som är mycket testy.
+                        Vår uppgift är att servera världens bästa mat till din dörr.Vi har en bra kock som gör maten mer
+                        utsökt.</p>
+                </div>
+            </div>
         </div>
-      
-        <div class="vision">
-            <h2>VISION</h2>
-            <p3>Vi ser programmering och gaming som en del av en stabil framtid där utvecklingen hela tiden går framåt. Vi vill se till att alla
-               utvecklare, programmerare och andra ljusskygga varelser på ett enkelt och smidigt sätt kan fortsätta sitt viktiga arbete.Då hjärnan
-               är det organ i kroppen som kräver mest energi är det viktigt att fylla på med näring och det är här vi kommer in.Fortsätt sitta kvar vid
-               datorn och för oss mot en ljusare framtid, vi fixar så att du inte behöver gå till affären och får all den näring och energi du behöver.
-               Ring eller maila, leverans sker inom en timme med drönare.
-             </p3>
+        <div class="row gallery_row">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery">
+                    <a target="_blank" href="contact.html" class="thumbnail">
+                        <img src="../img/karin.jpg" class="img-responsive"
+                            alt="Managing partner and Ceo of the company" />
+                    </a>
+                    <div class="desc"> Managing partner and Ceo of the company</div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery">
+                    <a target="_blank" href="about" class="thumbnail">
+                        <img src="../img/sharmin.jpg" class="img-responsive"
+                            alt="Managing partner and Ceo of the company" />
+                    </a>
+                    <div class="desc">Managing partner and Ceo of the company</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery">
+                    <a target="_blank" href="index.html" class="thumbnail">
+                        <img src="../img/jonas.jpg" class="img-responsive"
+                            alt="Managing partner and customer officer" />
+                    </a>
+                    <div class="desc">Managing partner and customer officer</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery">
+                    <a target="_blank" href="product.html" class="thumbnail">
+                        <img src="../img/jahir.jpg" class="img-responsive" alt="Managing partner and webdeveloper" />
+                    </a>
+                    <div class="desc">Managing partner and webdeveloper</div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row vision">
+            <div class="col-sm-12">
+                <h2>VISION</h2>
+                <p>Vi ser program mering och gaming som en del av en stabil framtid där utvecklingen hela tiden går
+                    framåt. Vi vill se till att alla utvecklare, programmerare och andra ljusskygga varelser på ett enkelt och smidigt sätt kan fortsätta
+                    sitt viktiga arbete.Då hjärnan
+                    är det organ i kroppen som kräver mest energi är det viktigt att fylla på med näring och det är här
+                    vi
+                    kommer in.Fortsätt sitta kvar vid
+                    datorn och för oss mot en ljusare framtid,vi fixar så att du inte behöver gå till affären och får
+                    all
+                    den näring och energi du behöver.
+                    Ring eller maila,leverans sker inom en timme med drönare.
+                </p>
+            </div>
+
         </div>
         <div id="slider">
             <figure>
-            <img src="../img/delivery boy.jpg" alt>
-            <img src="../img/chicken.jpg" alt>
-            <img src="../img/food.jpg" alt>
-            <img src="../img/burger.jpg" alt>
+                <img src="../img/deliveryboy.jpg" alt>
+                <img src="../img/chicken.jpg" alt>
+                <img src="../img/food.jpg" alt>
+                <img src="../img/burger.jpg" alt>
             </figure>
-            </div>
-        
-    </main>
-<footer>
-    <div class="social-media">
-        <a href="#"><i class="fa fa-facebook-square"></i></a>
-        <a href="#"><i class="fa fa-twitter-square"></i></a> 
-        <a href="#"><i class="fa fa-youtube-square"></i></a> 
-        <a href="#"><i class="fa fa-instagram"></i></a> 
+        </div>
     </div>
-    <div class="footer-text">
-        <p>© 2019 Code-Food; Alla rättigheter är reserverade</p>
-    </div>
-</footer>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>© 2019 Code-Food; Alla rättigheter är reserverade</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
